@@ -1,0 +1,65 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .profile-section,
+  .checkin-section,
+  leave-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .checkin-section button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkin-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .leave-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leave-section form label {
+    margin-bottom: 10px;
+  }
+  
+  .leave-section form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .leave-section form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .dashboard-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  

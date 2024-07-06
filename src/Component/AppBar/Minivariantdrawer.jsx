@@ -21,7 +21,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import AddIcon from '@mui/icons-material/Add';
 import { Badge, Button } from '@mui/material';
-import { MenuOption } from '../Components/MenuOption';
+// import { MenuOption } from '../Components/MenuOption';
 // import { navigation } from '../utils/Mappings';
 import { Link, Outlet } from 'react-router-dom';
 
@@ -92,8 +92,8 @@ const AppBar = styled(MuiAppBar, {
 
 export const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 export const navigation = [
-    { "tittle": "Dashboard", "path": "home", "icon": "i" },
-    { "tittle": "Staff", "path": "staff", "icon": "i" },
+    { "tittle": "Module-1", "path": "Hr-Module", "icon": "i" },
+    { "tittle": "Onboarding", "path": "Onboarding", "icon": "i" },
     { "tittle": "Branch", "path": "branch", "icon": "i" },
     { "tittle": "Service", "path": "Service", "icon": "i" },
     { "tittle": "Bookings", "path": "Bookings", "icon": "i" },
@@ -117,7 +117,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
 );
 
-export default function MiniDrawer() {
+export default function Minivariantdrawer() {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
@@ -156,10 +156,11 @@ export default function MiniDrawer() {
                     </IconButton>
                     <Typography variant="h6" noWrap component="div" sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
                         <div className="appTittle flex items-center">
-                            Car Wash Application
+                            Name of Application
                         </div>
                         <div className='Button-align'>
-                            <MenuOption />
+                            {/* <MenuOption /> */}
+                            :
                         </div>
 
                     </Typography>

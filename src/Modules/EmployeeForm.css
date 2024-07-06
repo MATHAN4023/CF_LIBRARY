@@ -1,0 +1,65 @@
+/* EmployeeForm.css */
+
+.employee-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.section {
+    flex: 1 1 300px;
+    /* Flex-grow, flex-shrink, and flex-basis */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.section input,
+.section textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .employee-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section {
+        flex: 1 1 45%;
+    }
+}
