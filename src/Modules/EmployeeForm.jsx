@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './EmployeeForm.css';
 import { Box, Button } from '@mui/material';
+import { StepperComp } from '../Testing/StepperComp';
 
 const EmployeeForm = () => {
     const [employee, setEmployee] = useState({
@@ -70,6 +71,7 @@ const EmployeeForm = () => {
     return (
         // <Box component="main" sx={{ flexGrow: 1, p: 10 }}></Box>
         <Box className='form' component="main" sx={{ flexGrow: 1, p: 10 }}>
+            <StepperComp />
             <form className="employee-form">
                 <div className="section">
                     <h2>Basic Information</h2>
@@ -135,7 +137,7 @@ const EmployeeForm = () => {
                     <input type="date" name="dependentDOB" placeholder="Date of Birth" value={employee.dependentDOB} onChange={handleChange} />
                 </div>
             </form>
-            <div className="submit" style={{display:'flex', justifyContent:'center'}}>
+            <div className="submit" style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button type="submit" onClick={handleSubmit} >Submit</Button>
             </div>
         </Box>
